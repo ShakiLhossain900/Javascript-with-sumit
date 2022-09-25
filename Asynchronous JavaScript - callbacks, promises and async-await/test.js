@@ -26,6 +26,8 @@ const takeOrder = (customer,callback) => {
 const processOrder = (customer,callback) =>{
     console.log(`processing order for ${customer} 1`);
 
+
+    //scync
     setTimeout(()=>{
         console.log(`cooking completed`);
         console.log(`order procesed for ${customer} 1`);
