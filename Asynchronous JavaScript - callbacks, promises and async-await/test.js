@@ -1,3 +1,4 @@
+// asynchronous 
 const processOrder = (customer) => {
     console.log('processing order for customer 1');
 
