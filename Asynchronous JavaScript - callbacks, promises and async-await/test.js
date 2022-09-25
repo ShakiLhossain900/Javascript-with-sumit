@@ -1,4 +1,4 @@
-// asynchronous 
+// asynchronous  joto para jay async system code likhte hobe and dekbe hobe code jeno block na hoy
 const processOrder = (customer) => {
     console.log('processing order for customer 1');
 
