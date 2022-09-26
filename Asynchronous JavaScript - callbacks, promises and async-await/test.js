@@ -47,3 +47,4 @@ takeOrder('customer 1',(customer)=>{
         completedOrder(customer)
     })
 })
+console.log("hello");
