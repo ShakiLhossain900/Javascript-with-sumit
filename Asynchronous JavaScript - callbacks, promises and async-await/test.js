@@ -1,3 +1,6 @@
+//Synchronous = happens at the same time. Asynchronous = doesn't happen at the same time. With synchronous learning, participants can receive immediate feedback.
+
+
 // // asynchronous  joto para jay async system code likhte hobe and dekbe hobe code jeno block na hoy
 // const processOrder = (customer) => {
 //     console.log('processing order for customer 1');
@@ -24,13 +27,13 @@ const takeOrder = (customer,callback) => {
 }
 
 const processOrder = (customer,callback) =>{
-    console.log(`processing order for ${customer} 1`);
+    console.log(`processing order for ${customer} `);
 
 
     //scync
     setTimeout(()=>{
         console.log(`cooking completed`);
-        console.log(`order procesed for ${customer} 1`);
+        console.log(`order procesed for ${customer} `);
         callback(customer)
     },3000);
    
