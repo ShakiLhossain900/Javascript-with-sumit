@@ -4,7 +4,7 @@
 
 //this video i need to complete tonight
 
-const hasMeeting = true;
+const hasMeeting = false;
 const metting = new Promise((resolve, reject) => {
   if (!hasMeeting) {
     const mettingDetails = {
@@ -25,3 +25,5 @@ metting
   .catch((err) => {
     console.log(err.message);
   });
+
+  console.log("hello");
