@@ -18,3 +18,8 @@ const metting = new Promise((resolve, reject)=> {
         reject(new Error("meeting already scheduled"))
     }
 })
+
+metting
+.then((res) => {
+    console.log(JSON.stringify(res));
+})
