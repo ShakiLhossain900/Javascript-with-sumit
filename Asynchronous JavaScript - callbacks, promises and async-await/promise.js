@@ -6,7 +6,7 @@
 //this is one promise 
 const hasMeeting = false;
 const metting = new Promise((resolve, reject) => {
-  if (hasMeeting) {
+  if (!hasMeeting) {
     const MeetingDetails = {
       name: "technical meeting",
       location: "ss-blockChain-it",
@@ -25,12 +25,13 @@ const addToCalender = (meetingDetails) => {
   return Promise.resolve(calender);
 };
 
-console.log("hey shakil i am started working ");
+
 metting
+  .then(addToCalender)
   .then((res) => {
-    console.log(JSON.stringify(res));
+    console.log(res);
   })
   .catch((err) => {
     console.log(err.message);
   });
-console.log("hey i am the last log");
+console.log("hello");
