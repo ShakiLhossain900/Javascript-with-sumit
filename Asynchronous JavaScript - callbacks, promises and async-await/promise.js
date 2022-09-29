@@ -30,7 +30,7 @@
 
 const hasMeeting = false;
 const metting = new Promise((resolve, reject) => {
-  if (!hasMeeting) {
+  if (hasMeeting) {
     const MeetingDetails = {
       name: "technical meeting",
       location: "ss-blockChain-it",
