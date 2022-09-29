@@ -27,3 +27,28 @@
 //   });
 
 //   console.log("hello");
+
+const hasMeeting = false;
+const metting = new Promise((resolve, reject) => {
+  if (!hasMeeting) {
+    const MeetingDetails = {
+      name: "technical meeting",
+      location: "ss-blockChain-it",
+      time: new Date(),
+    };
+
+    resolve(MeetingDetails);
+  } else {
+    reject(new Error("Invalid meeting!"));
+  }
+});
+
+console.log("hey shakil i am started working ");
+metting
+.then((res) => {
+  console.log(JSON.stringify(res));
+})
+.catch((err) => {
+    console.log(err.message);
+})
+console.log("hey i am the last log");
