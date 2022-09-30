@@ -12,7 +12,7 @@
 //this is one promise 
 const hasMeeting = false;
 const meeting = new Promise((resolve, reject) => {
-  if (!hasMeeting) {
+  if (hasMeeting) {
     const MeetingDetails = {
       name: "technical meeting",
       location: "ss-blockChain-it",
@@ -47,11 +47,17 @@ const addToCalender = (meetingDetails) => {
 async function myMeeting (){
     // awit means here i need to wait meeting er data golo powa porjonto calender y jaite parbe na 
     //than calender await y means addTocalender y data na asa poorjonto log korbe na 
-    console.log("starting");
+   try{
+    
     const meetingDetails = await meeting;
     const calender = await addToCalender(meetingDetails);
     console.log(calender);
-    console.log("end");
+  
+   } catch{
+    console.log(`Someting wrong happened: `);
+   }
 }
 
 myMeeting()
+
+console.log("hello ");
