@@ -42,6 +42,8 @@ const addToCalender = (meetingDetails) => {
 //   });
 // console.log("hello");
 
+
+//than block y chain na kore async await use kore korata best 
 async function myMeeting (){
     // awit means here i need to wait meeting er data golo powa porjonto calender y jaite parbe na 
     //than calender await y means addTocalender y data na asa poorjonto log korbe na 
